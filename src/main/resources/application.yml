@@ -1,0 +1,28 @@
+---
+logging:
+  level:
+    org.springframework.amqp: debug
+    org.springframework.cloud: debug
+    org.springframework.integration: debug
+    org.springframework.messaging: debug
+    com.rabbitmq: debug
+    com.fasterxml.jackson: debug
+    com.rabbitmq.client.impl.TlsUtils: info
+
+spring:
+  application:
+    name: spring-cloud-serialization-bugs
+
+  main:
+    banner-mode: off
+
+  rabbitmq:
+    host: localhost
+    username: guest
+    password: guest
+
+  cloud:
+    stream:
+      bindings:
+        testError-out-0:
+          destination: springcloud.test        # this is an exchange because it is an output

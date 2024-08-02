@@ -1,0 +1,19 @@
+.DS_Store
+
+## IntelliJ
+.idea/
+out/
+*.iml
+*.ipr
+
+## Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+## Gradle
+build/
+.gradle/
+!gradle-wrapper.jar

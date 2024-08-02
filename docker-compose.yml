@@ -1,0 +1,15 @@
+---
+services:
+
+  #
+  # RabbitMQ
+  #
+  rabbitmq:
+    image: "rabbitmq:3.10-management"
+    container_name: rabbit310
+    hostname: rabbitmq
+    # Credentials: guest/guest
+    ports:
+      - "5671:5671"
+      - "5672:5672"
+      - "15672:15672"
